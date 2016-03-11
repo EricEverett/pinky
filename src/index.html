@@ -2,9 +2,209 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<title>Pink: Test</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<noscript><link href="css/grunticon-icons.fallback.css" rel="stylesheet"></noscript>
+	<!--[if lt IE 9]>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
 </head>
 <body>
+	<header class="page-header">
+		<div class="page-header__container">
+			<div class="row">
+				<div class="col-md-4">
+					<h1 class="logo">
+						<a href="index.html">PINK</a>
+					</h1>
+					<a class="nav-toggle"><span>Меню</span></a>
+				</div>
+				
+				<div class="col-md-8">
+					<div class="page-header__menu-wrap">
+						<nav class="main-nav">
+							<a href="" class="main-nav__toggle main-nav__toggle--close"></a>
+							<ul class="main-nav__list">
+								<li><a href="#" class="main-nav__active-item">Информация</a></li>
+								<li><a href="#"></a>Возможности</li>
+								<li><a href="#"></a>Отзывы</li>
+								<li><a href="#"></a>Стоимость</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 	
+	<section class="intro">
+		<div class="intro__container">
+			<h2 class="intro__caption">Взгляните на жизнь иначе!</h2>
+			<div class="intro-desc">
+				<a href="#" class="btn btn--desc">Скачать приложение</a>
+				<ul class="intro-descr__vendors-list">
+					<li><i class="icon-apple-logo" data-grunticon-embed></i></li>
+					<li><i class="icon-android-logo" data-grunticon-embed></i></li>
+					<li><i class="icon-microsoft-logo" data-grunticon-embed></i></li>
+				</ul>
+				<p>Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="features">
+		<div class="features__container">
+			<div class="features__feature-caption">
+				<p>Устали от серости мегаполиса?</p>
+				<p>Нам есть, что вам предложить!</p>
+			</div>
+			<div class="features__items">
+				<div class="features__item">
+					<strong class="feature__caption">Поднимает настроение</strong>
+					<p>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+				</div>
+				<div class="features__item">
+					<strong class="feature__caption">Меняет мир вокруг</strong>
+					<p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+				</div>
+				<div class="features__item">
+					<strong class="feature__caption">Заводит новых друзей</strong>
+					<p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+				</div>
+			</div>
+
+			<div class="features__img">
+				<picture>
+					<source media="(min-width: 700px)" 
+	                          srcset="img/iphone-screen-2-1x.png, 
+	                                  img/iphone-screen-2-2x.png 2x">
+	        <source media="(min-width: 320px)" 
+	                          srcset="img/iphone-screen-2-1x.png, 
+	                                  img/iphone-screen-2-2x.png 2x,
+	                                  img/iphone-md-2x.png 3x">
+	        <img src="img/iphone-screen-2-1x.png" alt="Iphone img">
+	      </picture>
+			</div>
+		</div>
+	</section>
+
+	<section class="review">
+		<div class="review__container">
+			<div class="slider-review">
+				
+				<div class="review__item">
+					<div class="review__author">Николай Петров</div>
+					<p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+				</div>
+				<div class="review__item">
+					<div class="review__author"></div>
+					<p class="review__text"></p>
+				</div>
+				<div class="review__item">
+					<div class="review__author"></div>
+					<p class="review__text"></p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="price">
+		<div class="price__container">
+			<div class="slider-price">
+				<input type="radio" id="btn-1" name="toggle" >
+            <input type="radio" id="btn-2" name="toggle" checked>
+            <input type="radio" id="btn-3" name="toggle">
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+            </div>
+				<div class="slider__body">
+					<div class="slider__slide slider--first">
+						<table class="price-table">
+							<tr>
+								<th class="price-table__caption">База <span>1,99 USD</span></th>
+							</tr>
+							<tr>
+								<td>Розовый фильтр <i class="check">+</i></td>
+							</tr>
+							<tr>
+								<td>Смайлики <i>-</i></td>
+							</tr>
+							<tr>
+								<td>Комментарии <i>-</i></td>
+							</tr>
+						</table>
+					</div>
+					<div class="slider__slide slider--second">
+						<table class="price-table">
+							<tr>
+								<th class="price-table__caption">Стандарт <span>3,99 USD</span></th>
+							</tr>
+							<tr>
+								<td>Розовый фильтр <i class="check">+</i></td>
+							</tr>
+							<tr>
+								<td>Смайлики <i class="check">+</i></td>
+							</tr>
+							<tr>
+								<td>Комментарии <i>-</i></td>
+							</tr>
+						</table>
+					</div>
+					<div class="slider__slide slider--third">
+						<table class="price-table">
+							<tr>
+								<th class="price-table__caption">Анлим <span>9,99 USD</span></th>
+							</tr>
+							<tr>
+								<td>Розовый фильтр <i class="check">+</i></td>
+							</tr>
+							<tr>
+								<td>Смайлики <i class="check">+</i></td>
+							</tr>
+							<tr>
+								<td>Комментарии <i class="check">+</i></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	
+	<footer class="page-footer">
+		<div class="page-footer__container">
+			<div class="contacts">
+				<h2 class="contacts__caption">Остались вопросы?<br>Свяжитесь с нами!</h2>
+				
+				<dl class="contacts__list">
+					<dt>Звоните</dt>
+					<dd><a href="tel:88001000900">8 (800) 1000 900</a></dd>
+				</dl>
+				<dl class="contacts__list">
+					<dt>Пишите</dt>
+					<dd><a href="mailto:hello@pinkapp.ru">hello@pinkapp.ru</a></dd>
+				</dl>
+				<dl class="contacts__list">
+					<dt>Приезжайте в гости</dt>
+					<dd>Санкт-Петербург,<br>Невский проспект, д. 20</dd>
+				</dl>
+			</div>
+		</div>
+
+		<div class="map" style="max-width:90%; height:220px;"></div>
+	</footer>
+	
+  <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="js/script.min.js"></script>
+	<script>
+		grunticon(["css/grunticon-icons.data.svg.css", "css/grunticon-icons.data.png.css", "css/grunticon-icons.fallback.css"], grunticon.svgLoadedCallback);
+	</script>
 </body>
 </html>

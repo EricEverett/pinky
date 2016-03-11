@@ -1,0 +1,30 @@
+
+.icon-android-logo {
+	display: inline-block;
+  vertical-align: middle;
+  background-image: url('png/android-logo.png');
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 47px;
+}
+
+
+.icon-apple-logo {
+	display: inline-block;
+  vertical-align: middle;
+  background-image: url('png/apple-logo.png');
+  background-repeat: no-repeat;
+  width: 46px;
+  height: 57px;
+}
+
+
+.icon-microsoft-logo {
+	display: inline-block;
+  vertical-align: middle;
+  background-image: url('png/microsoft-logo.png');
+  background-repeat: no-repeat;
+  width: 44px;
+  height: 42px;
+}
+

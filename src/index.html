@@ -17,7 +17,17 @@
 			<div class="row">
 				<div class="col-md-4">
 					<h1 class="logo">
-						<a href="index.html">PINK</a>
+						<a href="index.html">
+							<picture>
+								<source media="(min-width: 1200px)" 
+				                          srcset="img/Pink-logo-footer-3@1x.png, 
+				                                  img/Pink-logo-footer-3@2x.png 2x">
+				        <source media="(min-width: 700px)" 
+				                          srcset="img/Pink-logo-2@1x.png, 
+				                                  img/Pink-logo-2@2x.png 2x">
+				        <img src="img/Pink-logo-1.png" alt="Pink logo">
+			        </picture>
+						</a>
 					</h1>
 					<a class="nav-toggle"><span>Меню</span></a>
 				</div>
@@ -27,10 +37,10 @@
 						<nav class="main-nav">
 							<a href="" class="main-nav__toggle main-nav__toggle--close"></a>
 							<ul class="main-nav__list">
-								<li><a href="#" class="main-nav__active-item">Информация</a></li>
-								<li><a href="#"></a>Возможности</li>
-								<li><a href="#"></a>Отзывы</li>
-								<li><a href="#"></a>Стоимость</li>
+								<li><a href="#info" class="main-nav__active-item">Информация</a></li>
+								<li><a href="#feature">Возможности</a></li>
+								<li><a href="#review">Отзывы</a></li>
+								<li><a href="#price">Стоимость</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -39,7 +49,7 @@
 		</div>
 	</header>
 	
-	<section class="intro">
+	<section class="intro" id="info">
 		<div class="intro__container">
 			<h2 class="intro__caption">Взгляните на жизнь иначе!</h2>
 			<div class="intro-desc">
@@ -54,7 +64,7 @@
 		</div>
 	</section>
 
-	<section class="features">
+	<section class="features" id="feature">
 		<div class="features__container">
 			<div class="features__feature-caption">
 				<p>Устали от серости мегаполиса?</p>
@@ -90,7 +100,7 @@
 		</div>
 	</section>
 
-	<section class="review">
+	<section class="review" id="review">
 		<div class="review__container">
 			<div class="slider-review">
 				
@@ -111,7 +121,7 @@
 		</div>
 	</section>
 
-	<section class="price">
+	<section class="price" id="price">
 		<div class="price__container">
 			<div class="slider-price">
 				<input type="radio" id="btn-1" name="toggle" >
@@ -129,13 +139,13 @@
 								<th class="price-table__caption">База <span>1,99 USD</span></th>
 							</tr>
 							<tr>
-								<td>Розовый фильтр <i class="check">+</i></td>
+								<td>Розовый фильтр <span class="tb-icon"><i class="check">+</i></span></td>
 							</tr>
 							<tr>
-								<td>Смайлики <i>-</i></td>
+								<td>Смайлики <span class="tb-icon"><i>-</i></span></td>
 							</tr>
 							<tr>
-								<td>Комментарии <i>-</i></td>
+								<td>Комментарии <span class="tb-icon"><i>-</i></span></td>
 							</tr>
 						</table>
 					</div>
@@ -145,13 +155,13 @@
 								<th class="price-table__caption">Стандарт <span>3,99 USD</span></th>
 							</tr>
 							<tr>
-								<td>Розовый фильтр <i class="check">+</i></td>
+								<td>Розовый фильтр <span class="tb-icon"><i class="check">+</i></span></td>
 							</tr>
 							<tr>
-								<td>Смайлики <i class="check">+</i></td>
+								<td>Смайлики <span class="tb-icon"><i class="check">+</i></span></td>
 							</tr>
 							<tr>
-								<td>Комментарии <i>-</i></td>
+								<td>Комментарии <span class="tb-icon"><i>-</i></span></td>
 							</tr>
 						</table>
 					</div>
@@ -161,13 +171,13 @@
 								<th class="price-table__caption">Анлим <span>9,99 USD</span></th>
 							</tr>
 							<tr>
-								<td>Розовый фильтр <i class="check">+</i></td>
+								<td>Розовый фильтр <span class="tb-icon"><i class="check">+</i></span></td>
 							</tr>
 							<tr>
-								<td>Смайлики <i class="check">+</i></td>
+								<td>Смайлики <span class="tb-icon"><i class="check">+</i></span></td>
 							</tr>
 							<tr>
-								<td>Комментарии <i class="check">+</i></td>
+								<td>Комментарии <span class="tb-icon"><i class="check">+</i></span></td>
 							</tr>
 						</table>
 					</div>
@@ -198,7 +208,7 @@
 			</div>
 		</div>
 
-		<div class="map" style="max-width:90%; height:220px;"></div>
+		<div class="map" style="max-width:auto; height:220px;"></div>
 	</footer>
 	
   <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>

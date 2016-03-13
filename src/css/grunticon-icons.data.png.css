@@ -19,6 +19,16 @@
 }
 
 
+.icon-menu-burger {
+	display: inline-block;
+  vertical-align: middle;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAYCAYAAAC4CK7hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAJdJREFUWIXt17ENwlAMRdH7vsIAiAJWQBQUiP1bUlDQIFZAoCwQxKPICB/F+ZLPBNdyYVm2L8CBdj0knWXb0SW1JKlER/xLAcboiEojQAfsgCPTUK35ArfoiJTSjGR7ANbRIRUGSZu87EtTgDfQ6lYMvKIjUkozku0tcIoOqXCV9JTtkekvadVH0iov+9J0QA/so0Mq3AF+f7gpxbH1kcMAAAAASUVORK5CYII=');
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 24px;
+}
+
+
 .icon-microsoft-logo {
 	display: inline-block;
   vertical-align: middle;

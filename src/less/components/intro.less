@@ -1,0 +1,59 @@
+.intro {
+    height: 455px;
+    background-color: #2B3A4A;
+    .img-retina('../img/background-1@1x.jpg';'../img/background-1@2x.jpg'; auto; 100%);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    @media screen and (min-width: 700px) {
+        .img-retina('../img/background-2@1x.jpg';'../img/background-2@2x.jpg'; auto; 100%);
+    }
+    @media screen and (min-width: 1200px) {
+        background-image: url('../img/background-fullsize.jpg');
+    }
+
+    &__container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    &__caption {
+        text-align: center;
+
+        h2 {
+            padding-left: 30px;
+            padding-top: 85px;
+            margin: 0;
+            font-weight: @fw-light;
+            font-size: @fz-h2;
+            line-height: @lh-caption;
+            color: @white;
+        }
+    }
+}
+
+.download {
+    background-color: @blue;
+
+    &__container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    &__vendors-list {
+        ul {
+            list-style: none;
+        }
+        li {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    p {
+        color: @white;
+        font-weight: @fw-light;
+        font-size: @fz-base;
+        line-height: @lh-base;
+    }
+}

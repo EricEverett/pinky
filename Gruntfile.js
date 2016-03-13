@@ -34,7 +34,7 @@ module.exports = function(grunt) {
   	csscomb:{
   		style:{
   			expand:true,
-  			src:["src/less/components/*.less"]
+  			src:["src/less/components/*.less","src/less/base/*.less"]
   		}
   	},
 

@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 12px 30px 15px;
+    color: @white;
+    font-size: @fz-large;
+    font-weight: @fw-bold;
+    text-align: center;
+    border: 3px solid @white;
+    background: transparent;
+    border-radius: 25px;
+
+    &:visited {
+        background: transparent;
+        color: @white;
+        text-decoration: none;
+    }
+
+    &:hover,
+    &:focus {
+        background: @white;
+        color: @pink;
+        text-decoration: none;
+    }
+    &:active {
+        background: @white;
+        color: fade(@pink, 60%);
+        text-decoration: none;
+    }
+}

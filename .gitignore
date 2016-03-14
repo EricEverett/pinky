@@ -2,4 +2,4 @@ build/*
 bower_components
 node_modules
 src/less/bootstrap3/*
-src/img/png
+src/img/png/

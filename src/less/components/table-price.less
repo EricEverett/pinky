@@ -1,4 +1,8 @@
 .price {
+    position: relative;
+    margin: 0;
+    margin-bottom: 40px;
+    background-color: @grey-light;
     &__container {
         max-width: 960px;
         margin: 0 auto;
@@ -40,6 +44,7 @@
         text-transform: uppercase;
     }
     td {
+        background: @white;
         color: #283645;
         text-transform: uppercase;
         padding: 15px 20px 10px;
@@ -95,5 +100,53 @@
         height: 2px;
         background-color: #3DC644;
         transform: rotate(-55deg);
+    }
+}
+
+.slider {
+    &__controls {
+        text-align: center;
+        padding: 35px 0;
+        font: 0/0 a;
+        label {
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+            position: relative;
+            margin-right: 20px;
+            font-size: @fz-base;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 6px;
+                height: 6px;
+                position: absolute;
+                left: 0;
+                background-color: fade(@black,30%);
+                border-radius: 50%;
+            }
+            &:hover::before,
+            &:focus::before {
+                background-color: fade(@black, 60%);
+            }
+            &:active::before {
+                background-color: fade(@black, 10%);
+            }
+        }
+        input[type=radio] {
+            display: none;
+
+            &:checked+ label:before {
+                content: '';
+                position: absolute;
+                top: -3px;
+                left: -3px;
+                background: @white;
+                border: 3px solid #283645;
+                text-align: center;
+            }
+        }
     }
 }

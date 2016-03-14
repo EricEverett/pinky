@@ -1,6 +1,45 @@
 .review {
+    position: relative;
+
     &__container {
         max-width: 960px;
         margin: 0 auto;
+        position: relative;
+        margin-bottom: 70px;
+        z-index: 10;
+        &--bg-triangle {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                top: -70px;
+                width: 120%;
+                height: 300px;
+                background-color: @grey-light;
+                transform: rotate(-5deg);
+            }
+        }
+    }
+    &__item {
+        display: none;
+        text-align: center;
+        margin: 0;
+        padding: 0 20px;
+        cite {
+            font-size: @fz-large;
+            font-weight: @fw-bold;
+            font-style: normal;
+            line-height: 30px;
+        }
+        p {
+            margin: 0;
+            font-size: @fz-base;
+            font-weight: @fw-normal;
+            line-height: 30px;
+        }
+
+        &--active {
+            display: block;
+        }
     }
 }
